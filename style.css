@@ -1,57 +1,91 @@
 body {
-    background-color: #efeee7;
-    font: Georgia,"Times New Roman",Times,serif;
-    color:#333333;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
+    font-family: monospace;
 }
 
-header {
-    background-color:#333333;
+#container {
+    margin: 20px auto;
+    background-color: white;
+    height: 300px;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
 }
 
-h1 {
-    color: #eee;
-    font-size: 28px;
-    margin: 0;
+#start {
+    font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width: 100px;
+    height: 150px;
+    border: 2px solid lightgrey;
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    color: lightgrey;
 }
 
-h2 {
-    font-size: 24px;
-	padding-left: 25px;
+#start:hover {
+    border: 3px solid lightseagreen;
+    color: lightseagreen;
 }
 
-#main-bio {
-    float: left;
-	width: 70%;
+/* #question {
+    width: 500px;
+    height: 125px;
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+#quiz {
+    bottom: 0;
 }
 
-#contact-info {
-    float: left;
-	width: 30%;
+#question p {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.25em;
+    position: absolute;
 }
 
-#bio-image {
-    float: left;
-	width: 200px;
-	margin: 3px 25px 25px 25px;
+#questions {
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    padding-left: 10px
 }
 
-.link {
+.choice {
+    display: inline-block;
+    width: 135px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.choice:hover {
+    border: 2px solid grey;
     font-weight: bold;
-    font-size: 1.5%
 }
 
-a:link {
-	color: red;
+#timer {
+    position: absolute;
+    height : 20px;
+    width : 20px;
+    top : 20px;
+    text-align: center;
+    margin-left: 600px;
 }
 
-a:visited {
-	color: red;
+#result {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 5px;
 }
-
-
-
-
